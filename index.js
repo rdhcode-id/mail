@@ -42,9 +42,9 @@ join.forEach((el) => {
   }
 });
 
-fs.writeFileSync(`index.html`, indexHtml);
+fs.writeFileSync(`${__dirname}/index.html`, indexHtml);
 
-fs.writeFileSync(`sass/main.scss`, mainSass);
+fs.writeFileSync(`${__dirname}/sass/main.scss`, mainSass);
 
-fs.writeFileSync(`sass/base/_base.scss`, content);
-fs.writeFileSync(`sass/components/_components.scss`, content);
+fs.writeFileSync(`${__dirname}/sass/base/_base.scss`, content);
+fs.writeFileSync(`${__dirname}/sass/components/_components.scss`, content);
